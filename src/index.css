@@ -11,3 +11,468 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.loading {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.loading span {
+  display: inline-block;
+  margin: 0 -0.05em;
+}
+
+/* code #3 */
+.loading03 span {
+  margin: 0 -0.075em;
+  -webkit-animation: loading03 0.7s infinite alternate;
+  animation: loading03 0.7s infinite alternate;
+}
+
+.loading03 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.loading03 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.loading03 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.loading03 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.loading03 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.loading03 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes loading03 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes loading03 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html body {
+  font-size: 1.7rem;
+}
+
+.user {
+  color: #ef7373;
+}
+
+.followers {
+  color: #81c3f5;
+}
+
+.following {
+  color: green;
+}
+
+.light-black {
+  color: #333;
+}
+
+.flex-row,
+.navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-row-center,
+.header,
+.card-container figure,
+.result-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.primary-bold {
+  font-weight: 700;
+  color: #bb2e1f;
+}
+
+.flex-46 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 46%;
+  flex: 0 1 46%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.users {
+  color: #ffbf74;
+}
+
+.winner {
+  color: #ffd700;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.error {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #cd301f;
+  display: block;
+  margin: 1rem 0;
+}
+
+.col-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+}
+
+#root .navigation-bar {
+  padding: 2% 11%;
+}
+
+#root main {
+  padding: 2% 11%;
+}
+
+#root a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+#root button {
+  border: none;
+  display: inline-block;
+}
+
+#root .active-menu {
+  color: #bb2e1f;
+  font-weight: 700;
+}
+
+.navigation-bar nav a {
+  margin-right: 2rem;
+}
+
+.header button {
+  background-color: transparent;
+}
+
+.header nav button {
+  margin: 0 3.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.cards-wrapper {
+  padding: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.card-container {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #ebebeb;
+}
+
+.card-container .index {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.card-container figure img {
+  width: 15rem;
+}
+
+.card-container h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.card-container .username {
+  font-size: 1.6rem;
+}
+
+.card-container p {
+  margin: 1rem 0;
+}
+
+.card-container p i {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.card-container .user i {
+  color: #ffbf74;
+}
+
+.card-container .star i {
+  color: #ffd700;
+}
+
+.card-container .branch i {
+  color: #81c3f5;
+}
+
+.card-container .issues i {
+  color: #f18a93;
+}
+
+.card-container p {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.wrapper h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.usernameInput-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 45%;
+  flex: 0 1 45%;
+  border: 0.1rem solid #ddd;
+}
+
+.form-group button {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 45%;
+  flex: 0 1 45%;
+  background-color: #ebebeb;
+  border: 0.1rem solid red;
+}
+
+.instruction-container {
+  padding: 4% 0;
+}
+
+.instruction-container .instruction-card h2 {
+  text-align: center;
+  margin: 2rem 0;
+  color: #333;
+}
+
+.instruction-container .instruction-icon {
+  background-color: #ebebeb;
+  padding: 2rem;
+}
+
+.instruction-container .instruction-icon i {
+  font-size: 8rem;
+}
+
+.instruction-container .instruction-icon .battle {
+  color: #333;
+}
+
+.userprofile-container {
+  width: 100%;
+  background-color: #ebebeb;
+  border: 0.1rem solid #ddd;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.userprofile-container h4 {
+  margin-left: 1rem;
+}
+
+.userprofile-container img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.battle-button-container {
+  margin: 3rem 0;
+}
+
+.battle-now {
+  padding: 0.8rem 4rem;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  background-color: #ebebeb;
+  border-radius: 0.6rem;
+}
+
+.battle-now a {
+  color: #fff;
+}
+
+.result-container {
+  padding: 2% 6%;
+}
+
+.result-container .result-card {
+  margin: 0 4rem;
+  background-color: #ebebeb;
+  padding: 2rem 4rem;
+}
+
+.result-container .result-card .col-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.result-container .result-card img {
+  width: 15rem;
+  margin: 1rem;
+}
+
+.result-container .result-card .winner {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.result-container .result-card h6 {
+  margin: 1rem 0;
+}
+
+.result-container .result-card .username {
+  color: #bb2e1f;
+}
+
+.result-container .result-card i {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.result-container .result-card p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
